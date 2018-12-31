@@ -207,7 +207,6 @@ namespace LowesLinkTemplates.Models
         {
             LLMainErr Model = new LLMainErr();
             Stream fileStream = null;
-            string base64 = null;
             string fileName = "";
             //ClientResult<Stream> streamResult = null;
             try
