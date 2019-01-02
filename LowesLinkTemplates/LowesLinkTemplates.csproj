@@ -340,17 +340,17 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="sites\LowesLink\LowesLinkAssets\Images\EDI.jpg" />
-    <Content Include="sites\LowesLink\LowesLinkAssets\Images\EPI.jpg" />
-    <Content Include="sites\LowesLink\LowesLinkAssets\Images\GettingStarted.jpg" />
-    <Content Include="sites\LowesLink\LowesLinkAssets\Images\IVPI.jpg" />
-    <Content Include="sites\LowesLink\LowesLinkAssets\Images\LC.jpg" />
-    <Content Include="sites\LowesLink\LowesLinkAssets\Images\LM.jpg" />
-    <Content Include="sites\LowesLink\LowesLinkAssets\Images\LoadingBlocks.gif" />
-    <Content Include="sites\LowesLink\LowesLinkAssets\Images\loweslink.png" />
-    <Content Include="sites\LowesLink\LowesLinkAssets\Images\LowesLogo.png" />
-    <Content Include="sites\LowesLink\LowesLinkAssets\Images\NPI.jpg" />
-    <Content Include="sites\LowesLink\LowesLinkAssets\Images\PIIS.jpg" />
+    <Content Include="sitess\LowesLink\LowesLinkAssets\Images\EDI.jpg" />
+    <Content Include="sitess\LowesLink\LowesLinkAssets\Images\EPI.jpg" />
+    <Content Include="sitess\LowesLink\LowesLinkAssets\Images\GettingStarted.jpg" />
+    <Content Include="sitess\LowesLink\LowesLinkAssets\Images\IVPI.jpg" />
+    <Content Include="sitess\LowesLink\LowesLinkAssets\Images\LC.jpg" />
+    <Content Include="sitess\LowesLink\LowesLinkAssets\Images\LM.jpg" />
+    <Content Include="sitess\LowesLink\LowesLinkAssets\Images\LoadingBlocks.gif" />
+    <Content Include="sitess\LowesLink\LowesLinkAssets\Images\loweslink.png" />
+    <Content Include="sitess\LowesLink\LowesLinkAssets\Images\LowesLogo.png" />
+    <Content Include="sitess\LowesLink\LowesLinkAssets\Images\NPI.jpg" />
+    <Content Include="sitess\LowesLink\LowesLinkAssets\Images\PIIS.jpg" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
