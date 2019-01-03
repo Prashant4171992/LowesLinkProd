@@ -23,7 +23,7 @@ namespace LowesLinkTemplates.Models
         private static string ListName => ConfigurationManager.AppSettings.Get("SPListName").ToString();
         public static string[] docExtensions = { ".docx", ".doc", ".pdf", ".zip", ".csv", ".xml", ".jpeg", ".jpg", ".png", ".gif", ".ico", ".ppt", ".pptx", ".xls", ".xlsx", ".xlsm", ".xlt", ".txt", ".avi", ".flv", ".wmv", ".mov", ".mp4", ".3gp" };
         public static string[] spPageExtensions = { "/sites/", "~site/" };
-        public static string[] secureContentExtensions = { "ww3.loweslink" };
+        public static string[] secureContentExtensions = { "ww3.loweslink", "secure.loweslink" };
         public static string[] appPageExtensions = { "/Home/Index/" };
         public static List<LLMain> requ = new List<LLMain>();
         public static Dictionary<string, string> urlDictProp = new Dictionary<string, string>();
