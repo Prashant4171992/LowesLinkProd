@@ -111,6 +111,8 @@ namespace LowesLinkTemplates.Models
                     {
                         var hrefVal = nod.Attributes["href"].Value.ToLower();
                         var fileName = "";
+                        var fileExt = "";
+                        var fullFileName = "";
                         /// <summary>
                         /// generate links for documents
                         /// </summary>
@@ -124,9 +126,15 @@ namespace LowesLinkTemplates.Models
                                     //getting file name from relative path of respective file
                                     fileName = hrefVal.Substring(idx + 1);
                                 }
-                                urlDictProp[fileName.ToString()] = hrefVal.ToString();
+                                //Only File Name
+                                fileName = System.IO.Path.GetFileNameWithoutExtension(hrefVal);
+                                //Only File Extension
+                                fileExt = System.IO.Path.GetExtension(hrefVal);
+                                //Complete File Name
+                                fullFileName = fileName + fileExt;
+                                urlDictProp[fullFileName.ToString()] = hrefVal.ToString();
                                 string oldHref = nod.Attributes["href"].Value;
-                                string updatedHref = nod.Attributes["href"].Value = "/Document/Index/" + fileName.Split('.')[0] + "?ext=" + fileName.Split('.')[1];
+                                string updatedHref = nod.Attributes["href"].Value = "/Document/Index/" + fileName + "?ext=" + fileExt.Split('.')[1];
                                 result = result.Replace(oldHref, updatedHref);
                             }
                         }
