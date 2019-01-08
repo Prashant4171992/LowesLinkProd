@@ -34,7 +34,7 @@ namespace LowesLinkTemplates.Controllers
                     }
                     if (fileType == null)
                     {
-                        return Content("Document Not Found !!");
+                        return View("~/Views/Error/Error.cshtml", returnErrorObject("<div style='font-size: xx-large;font-weight: 500;' align='center' class='mt-4'>Document Not Found.<br/>Please Contact Admins.</div>"));
                     }
                 }
                 //returning file properties, which should be view in the browsers
@@ -48,12 +48,25 @@ namespace LowesLinkTemplates.Controllers
                     }
                     if (fileType == null)
                     {
-                        return Content("Document Not Found !!");
+                        return View("~/Views/Error/Error.cshtml", returnErrorObject("<div style='font-size: xx-large;font-weight: 500;' align='center' class='mt-4'>Document Not Found.<br/>Please Contact Admins.</div>"));
                     }
                 }
             }
             //when the stream is null
-            return Content("Document Not Found !!");
+            return View("~/Views/Error/Error.cshtml", returnErrorObject("<div style='font-size: xx-large;font-weight: 500;' align='center' class='mt-4'>Document Not Found.<br/>Please Contact Admins.</div>"));
+        }
+
+        /// <summary>
+        /// reutrn Error page's content.
+        /// </summary>
+        public List<LLMain> returnErrorObject(string errMsg)
+        {
+            List<LLMain> ifModelIsBlankList = new List<LLMain>();
+            LLMain ifModelIsBlankObj = new LLMain();
+            ifModelIsBlankObj.PageName = "Document Not Found !!";
+            ifModelIsBlankObj.Content = errMsg;
+            ifModelIsBlankList.Add(ifModelIsBlankObj);
+            return ifModelIsBlankList;
         }
 
         /// <summary>
